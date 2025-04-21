@@ -1,8 +1,18 @@
 {
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "rewrites": [
-    { "source": "/login", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+    { "source": "/login", "destination": "/" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/profile", "destination": "/" },
+    { "source": "/profile/:userId", "destination": "/" },
+    { "source": "/chat/:userId", "destination": "/" },
+    { "source": "/services", "destination": "/" },
+    { "source": "/signup", "destination": "/" },
+    { "source": "/offerServices", "destination": "/" },
+    { "source": "/my-requests", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
 } 
